@@ -1,0 +1,1054 @@
+/* 
+-----------ESTILIZAÇÃO DO CABEÇALHO HOME-------------
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* Cabeçalho */
+
+header {
+
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background: white;
+
+    flex-wrap: wrap;
+
+}
+
+/* Logo */
+
+.logo img {
+
+    height: 110px;
+    max-width: 100%;
+
+}
+
+/* Menu */
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+nav li {
+
+    margin: 0 18px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: #001b5e;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+}
+
+nav a:hover {
+
+    color: #1d64f2;
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #001b5e;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+
+        display: none;
+
+    }
+
+    .menu-direita {
+
+        display: none;
+
+    }
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    nav.ativo {
+
+        display: block;
+
+        position: absolute;
+
+        top: 90px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #fff;
+
+        padding: 20px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+
+    }
+
+    nav.ativo ul {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+}
+
+/* Parte da direita */
+
+.menu-direita {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.menu-direita a {
+
+    text-decoration: none;
+
+    color: #001b5e;
+
+    margin-right: 18px;
+
+    font-weight: bold;
+
+}
+
+/* Botão */
+
+.botaoEntrar {
+
+    background: #0d3b9f;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+}
+
+.botaoEntrar:hover {
+
+    background: #237e01;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(13, 110, 253, .3);
+
+}
+
+
+/*
+----------ESTIIZAÇÃO AZUL ABAIXO DO CABEÇALHO MENU/HOME------------
+*/
+
+
+
+/*
+----------ESTILIZAÇÃO AZUL ABAIXO DO CABEÇALHO MENU/HOME------------
+*/
+
+.hero-comercio {
+
+    background-color: #0b3c85;
+
+    background-image: linear-gradient(rgba(11, 60, 133, .85), rgba(11, 60, 133, .85)), url('caminho-da-sua-imagem-de-fundo.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: #fff;
+
+    padding: 50px 20px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+.hero-container {
+
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+}
+
+.hero-esquerdo {
+
+    flex: 1 1 600px;
+
+    min-width: 320px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+.hero-conteudo {
+
+    width: 100%;
+
+}
+
+.hero-titulo {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+}
+
+.hero-subtitulo {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 15px;
+
+    opacity: .9;
+
+}
+
+.hero-breadcrumb {
+
+    font-size: .85rem;
+
+    opacity: .7;
+
+}
+
+.hero-breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+}
+
+.hero-breadcrumb a:hover {
+
+    text-decoration: underline;
+
+}
+
+.busca-e-mapa-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    max-width: 500px;
+
+    width: 100%;
+
+}
+
+.busca-container {
+
+    display: flex;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    padding: 4px;
+
+    width: 100%;
+
+}
+
+.busca-input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 12px 15px;
+
+}
+
+.busca-btn {
+
+    background: #007bff;
+
+    border: none;
+
+    color: #fff;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+
+}
+
+.btn-mapa {
+
+    width: 100%;
+
+    background: transparent;
+
+    border: 1px solid #fff;
+
+    color: #fff;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+.hero-direito {
+
+    flex: 1 1 350px;
+
+    max-width: 500px;
+
+}
+
+.card-publique-evento {
+
+    width: 100%;
+
+}
+
+/*0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+.evento-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.evento-icone-wrapper {
+    background-color: #e6f0ff;
+    color: #0b3c85;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.evento-textos h2 {
+    font-size: 1.1rem;
+    color: #fefeff;
+    margin: 0 0 2px 0;
+    font-weight: bold;
+}
+
+.evento-textos p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.btn-cadastrar-evento {
+    background-color: #0b3c85;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-cadastrar-evento:hover {
+    background-color: #237e01;
+    color: #ffffff;
+}
+
+/*
+   ESTILIZAÇÃO DA SEÇÃO PUBLIQUE SEU EVENTO
+   */
+
+/* Caixinha branca flutuante */
+.card-publique-evento {
+    background-color: #080257;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Agrupa ícone e textos */
+.evento-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Círculo azul claro do ícone de calendário */
+.evento-icone-wrapper {
+    background-color: #e6f0ff;
+    color: #0b3c85;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Textos internos ajustados */
+.evento-textos h2 {
+    font-size: 1.1rem;
+    color: #fefeff;
+    margin: 0 0 2px 0;
+    font-weight: bold;
+}
+
+.evento-textos p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Botão Cadastrar Pequeno */
+.btn-cadastrar-evento {
+    background-color: #0b3c85;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-cadastrar-evento:hover {
+    background-color: #237e01;
+    color: #ffffff;
+}
+
+/*
+/*
+BLOCO ABAIXO DE BANNERS  DA SESSÃO AZUL
+ */
+
+/* PALETA DE CORES PRINCIPAIS */
+:root {
+    --azul-conecta: #0b3b70;
+    --azul-hover: #082d56;
+}
+
+.text-azul-conecta {
+    color: var(--azul-conecta);
+}
+
+/* FORMATO DOS BOTÕES DE CATEGORIA (QUADRINHOS) */
+.guia-categorias {
+    border: 1px solid #eaeaea;
+    width: 100%;
+}
+
+.btn-categoria {
+    background: transparent;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 90px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-categoria i {
+    font-size: 20px;
+}
+
+.btn-categoria:hover,
+.btn-categoria.active {
+    background-color: rgba(11, 59, 112, 0.05);
+    color: var(--azul-conecta);
+    font-weight: 600;
+}
+@media (max-width: 991px) {
+
+    .guia-categorias {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-categoria {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        min-width: 100%;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .btn-categoria i {
+        font-size: 18px;
+    }
+}
+
+/* CARDS DE EVENTO (LAYOUT CLEAN) */
+.card-evento {
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+.card-evento:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* BADGE COM A DATA DO EVENTO */
+.data-badge {
+    background-color: #f0f4f8;
+    color: var(--azul-conecta);
+    min-width: 75px;
+    height: 75px;
+}
+
+.mini-text {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* CORES DOS EMBLEMAS DE CATEGORIA */
+.text-purple {
+    color: #6f42c1;
+}
+
+.bg-success-light {
+    background-color: #e8f5e9;
+}
+
+/* LIMITA O TEXTO EM APENAS 2 LINHAS SE FOR MUITO LONGO */
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clam: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* BLOCOS DA BARRA LATERAL SECUNDÁRIA */
+.bloco-lateral {
+    border: 1px solid #eaeaea;
+    width: 100%;
+}
+
+.bloco-lateral input {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* BOTÕES DE AÇÃO */
+.btn-conecta {
+    background-color: var(--azul-conecta);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-conecta:hover {
+    background-color: var(--azul-hover);
+    color: #ffffff;
+}
+
+.btn-outline-conecta {
+    border: 1px solid var(--azul-conecta);
+    color: var(--azul-conecta);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+.btn-outline-conecta:hover {
+    background-color: var(--azul-conecta);
+    color: #ffffff !important;
+}
+
+@media (max-width: 992px) {
+
+    .guia-categorias {
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    .btn-categoria {
+        flex: 1 1 140px;
+    }
+
+    .card-evento {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .card-evento .position-relative {
+        width: 100% !important;
+        max-width: 320px;
+        height: 220px !important;
+    }
+
+    .bloco-lateral {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .btn-categoria {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .btn-categoria {
+        flex: 1 1 100%;
+    }
+
+    .card-evento {
+        padding: 15px !important;
+    }
+
+    .card-evento .position-relative {
+        height: 180px !important;
+    }
+
+}
+
+/*--------------------------   footer -----------------------------------*/
+
+/* ==========================
+   FOOTER
+========================== */
+
+.rodape {
+    background: #0e233b;
+    color: #FFF;
+    padding: 45px 70px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.containerRodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* ==========================
+   COLUNAS
+========================== */
+
+.footer-col {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.footer-col h3 {
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+}
+
+.footer-col p {
+
+    font-size: 13px;
+
+    line-height: 22px;
+
+    color: #D5D9E3;
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo-footer {
+    width: 170px;
+    height: auto;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+.footer-col ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.footer-col li {
+
+    margin-bottom: 10px;
+
+}
+
+.footer-col a {
+
+    text-decoration: none;
+
+    color: #D5D9E3;
+
+    font-size: 14px;
+
+    transition: .3s;
+
+}
+
+.footer-col a:hover {
+
+    color: #FFFFFF;
+
+}
+
+/* ==========================
+   REDES SOCIAIS
+========================== */
+
+.redes {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .1);
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.redes a:hover {
+    background: #ffffff;
+    color: #052A6B;
+}
+
+.redes i {
+    font-size: 18px;
+}
+
+/* ==========================
+   NEWSLETTER
+========================== */
+
+.newsletter {
+
+    display: flex;
+
+    margin: 18px 0;
+
+}
+
+.newsletter input {
+
+    width: 220px;
+
+    padding: 10px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 6px 0 0 6px;
+
+}
+
+.newsletter button {
+
+    width: 45px;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 0 6px 6px 0;
+
+    background: white;
+
+    font-size: 18px;
+
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+.footer-copy {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, .15);
+
+    font-size: 13px;
+
+    color: #D5D9E3;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+@media (max-width: 992px) {
+
+    .rodape {
+
+        padding: 40px 30px 20px;
+
+    }
+
+    .containerRodape {
+
+        flex-wrap: wrap;
+
+        gap: 40px;
+
+    }
+
+    .footer-col {
+
+        flex: 1 1 45%;
+
+    }
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+@media (max-width: 768px) {
+
+    .rodape {
+
+        padding: 35px 20px 20px;
+
+    }
+
+    .containerRodape {
+
+        flex-direction: column;
+
+        gap: 35px;
+
+    }
+
+    .footer-col {
+
+        width: 100%;
+
+    }
+
+}
+
+/* ==========================
+   NEWSLETTER
+========================== */
+
+@media (max-width: 576px) {
+
+    .newsletter {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+    .newsletter input {
+
+        width: 100%;
+
+        border-radius: 6px;
+
+    }
+
+    .newsletter button {
+
+        width: 100%;
+
+        border-radius: 6px;
+
+        padding: 12px;
+
+    }
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+@media (max-width: 576px) {
+
+    .logo-footer {
+
+        width: 150px;
+
+    }
+
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+@media (max-width: 576px) {
+
+    .footer-copy {
+
+        font-size: 12px;
+
+    }
+
+}

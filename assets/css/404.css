@@ -1,0 +1,35 @@
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.imagem-404 {
+  max-width: 450px;
+}
+
+.codigo-erro {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #6f42c1;
+  line-height: 1;
+}
+
+.texto-erro {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+.alert {
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .codigo-erro {
+    font-size: 5rem;
+  }
+
+  .imagem-404 {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+}
